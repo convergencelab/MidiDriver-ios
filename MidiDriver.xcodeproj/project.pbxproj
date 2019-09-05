@@ -7,27 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F756276D2321B9C200E3F78C /* MidiDriver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75627632321B9C200E3F78C /* MidiDriver.framework */; };
-		F75627722321B9C200E3F78C /* MidiDriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75627712321B9C200E3F78C /* MidiDriverTests.swift */; };
 		F75627742321B9C200E3F78C /* MidiDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = F75627662321B9C200E3F78C /* MidiDriver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F756277E2321BA7A00E3F78C /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756277D2321BA7A00E3F78C /* Speaker.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F756276E2321B9C200E3F78C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F756275A2321B9C200E3F78C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F75627622321B9C200E3F78C;
-			remoteInfo = MidiDriver;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F75627632321B9C200E3F78C /* MidiDriver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MidiDriver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75627662321B9C200E3F78C /* MidiDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiDriver.h; sourceTree = "<group>"; };
 		F75627672321B9C200E3F78C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F756276C2321B9C200E3F78C /* MidiDriverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MidiDriverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75627712321B9C200E3F78C /* MidiDriverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiDriverTests.swift; sourceTree = "<group>"; };
 		F75627732321B9C200E3F78C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F756277D2321BA7A00E3F78C /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
@@ -38,14 +25,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F75627692321B9C200E3F78C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F756276D2321B9C200E3F78C /* MidiDriver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +44,6 @@
 			isa = PBXGroup;
 			children = (
 				F75627632321B9C200E3F78C /* MidiDriver.framework */,
-				F756276C2321B9C200E3F78C /* MidiDriverTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,24 +99,6 @@
 			productReference = F75627632321B9C200E3F78C /* MidiDriver.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F756276B2321B9C200E3F78C /* MidiDriverTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F756277A2321B9C200E3F78C /* Build configuration list for PBXNativeTarget "MidiDriverTests" */;
-			buildPhases = (
-				F75627682321B9C200E3F78C /* Sources */,
-				F75627692321B9C200E3F78C /* Frameworks */,
-				F756276A2321B9C200E3F78C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F756276F2321B9C200E3F78C /* PBXTargetDependency */,
-			);
-			name = MidiDriverTests;
-			productName = MidiDriverTests;
-			productReference = F756276C2321B9C200E3F78C /* MidiDriverTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,9 +112,6 @@
 					F75627622321B9C200E3F78C = {
 						CreatedOnToolsVersion = 10.3;
 						LastSwiftMigration = 1030;
-					};
-					F756276B2321B9C200E3F78C = {
-						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
@@ -171,20 +128,12 @@
 			projectRoot = "";
 			targets = (
 				F75627622321B9C200E3F78C /* MidiDriver */,
-				F756276B2321B9C200E3F78C /* MidiDriverTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F75627612321B9C200E3F78C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F756276A2321B9C200E3F78C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,23 +151,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F75627682321B9C200E3F78C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F75627722321B9C200E3F78C /* MidiDriverTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F756276F2321B9C200E3F78C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F75627622321B9C200E3F78C /* MidiDriver */;
-			targetProxy = F756276E2321B9C200E3F78C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F75627752321B9C200E3F78C /* Debug */ = {
@@ -396,44 +329,6 @@
 			};
 			name = Release;
 		};
-		F756277B2321B9C200E3F78C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J2JXL6FGDG;
-				INFOPLIST_FILE = MidiDriverTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.convergencelabstfx.MidiDriverTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		F756277C2321B9C200E3F78C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J2JXL6FGDG;
-				INFOPLIST_FILE = MidiDriverTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.convergencelabstfx.MidiDriverTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -451,15 +346,6 @@
 			buildConfigurations = (
 				F75627782321B9C200E3F78C /* Debug */,
 				F75627792321B9C200E3F78C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F756277A2321B9C200E3F78C /* Build configuration list for PBXNativeTarget "MidiDriverTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F756277B2321B9C200E3F78C /* Debug */,
-				F756277C2321B9C200E3F78C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
