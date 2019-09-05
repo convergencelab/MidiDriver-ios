@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import AudioToolbox
+
+class Speaker {
+    
+    var audioGraph: AUGraph?
+    var synthNode = AUNode()
+    var outputNode = AUNode()
+    var synthUnit: AudioUnit?
+    var patch = UInt32(0) // 0 By default
+    
+    func initAudio() {
+        
+    }
+    
+}
